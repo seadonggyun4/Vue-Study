@@ -1,12 +1,24 @@
 <template>
-  <FruitItem />
+  <MyBtn
+    class="heropy"
+    style="color:red"
+    color="#ff0000"
+    @hello="log">
+    Apple
+  </MyBtn>
 </template>
 
 <script>
-import FruitItem from '~/components/FruitItem.vue'
+import MyBtn from '~/components/MyBtn.vue'
+
 export default {
-  components: {
-    FruitItem
+  components:{
+    MyBtn
+  },
+  methods:{
+    log(){
+      console.log('Hello Vue!!')
+    }
   }
 }
 </script>
